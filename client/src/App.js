@@ -20,7 +20,7 @@ import OrderHistory from './pages/OrderHistory';
 
 // Removed GlobalState StoreProvider and added Redux Provider and store file
 import { Provider } from 'react-redux';
-import store from './utils/store';
+import store from './app/store';
 
 const httpLink = createHttpLink({
   uri: '/graphql',

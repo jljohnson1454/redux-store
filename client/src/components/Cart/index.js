@@ -4,7 +4,7 @@ import CartItem from '../CartItem';
 import Auth from '../../utils/auth';
 import './style.css';
 
-import { useStoreContext } from '../../utils/GlobalState';
+//import { useStoreContext } from '../../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import { idbPromise } from '../../utils/helpers';
 
@@ -23,8 +23,9 @@ const Cart = () => {
 
     // const [state, dispatch] = useStoreContext();
     // Replacing these variables with individual selectors and dispatch
-    const state = useSelector(state => state);
     const dispatch = useDispatch();
+    const state = useSelector(state => state);
+    
 
     useEffect(() => {
         async function getCart() {
