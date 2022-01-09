@@ -10,6 +10,7 @@ import { idbPromise } from '../../utils/helpers';
 
 import { QUERY_CHECKOUT } from '../../utils/queries';
 import { loadStripe } from '@stripe/stripe-js';
+import store from '../../app/store';
 
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
